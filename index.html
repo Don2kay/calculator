@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+    <section class="calculator">
+        <form>
+            <input type="text" name="" id="screen" class="screen">
+        </form>
+        <div class="buttons">
+            <!--yellow-->
+           <button type="button" class="btn btn-yellow" data-num="*" onClick="display('*')">*</button>
+           <button type="button" class="btn btn-yellow" data-num="/" onClick="display('/')">/</button>
+           <button type="button" class="btn btn-yellow" data-num="-" onClick="display('-')">-</button>
+           <button type="button" class="btn btn-yellow" data-num="+" onClick="display('+')">+</button>
+            <!--Gray Buttons-->
+            <button type="button" class="btn btn-grey" data-num="." onClick="display('.')">.</button>
+            <button type="button" class="btn btn-grey" data-num="9" onClick="display('9')">9</button>  
+            <button type="button" class="btn btn-grey" data-num="8" onClick="display('8')">8</button> 
+            <button type="button" class="btn btn-grey" data-num="7" onClick="display('7')">7</button> 
+            <button type="button" class="btn btn-grey" data-num="6" onClick="display('6')">6</button>
+            <button type="button" class="btn btn-grey" data-num="5" onClick="display('5')">5</button>
+            <button type="button" class="btn btn-grey" data-num="4" onClick="display('4')">4</button>
+            <button type="button" class="btn btn-grey" data-num="3" onClick="display('3')">3</button>
+            <button type="button" class="btn btn-grey" data-num="2" onClick="display('2')">2</button>
+            <button type="button" class="btn btn-grey" data-num="1" onClick="display('1')">1</button>
+            <button type="button" class="btn btn-grey" data-num="0" onClick="display('0')">0</button>
+            <button type="button" class="btn-equal btn-grey" onClick="solve()">=</button>
+            <button type="button" class="btn-clear" onClick="clear()">C</button>
+        </div>
+    </section>
+    <script src="index.js"></script>
+    <script src="index2.js"></script>
+</body>
+</html>
